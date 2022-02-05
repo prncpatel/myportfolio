@@ -1,0 +1,158 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.menu{
+    position: fixed !important;
+    top: 0px !important;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width:1300px){
+    .menu{
+        position: absolute;
+        top: 0%;
+        left: -50%;
+        bottom: 0%;
+        z-index: 1000;
+    }
+    .menucard{
+        width: 240px;
+    }
+
+    
+}
+
+.menu .img-container{
+    height: 250px;
+    position: relative;
+}
+.menu img{
+    object-fit:cover;
+    filter: brightness(95%);
+}
+.menu .img-content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 76, 121, 0.4);
+    font-family: 'Noto Serif', serif;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+}
+.menu a:hover{
+    color: white;
+}
+.menu .menu-items{
+    background-color: rgb(20, 24, 24);
+}
+
+.menu .active{
+    color: white;
+}
+.menu h5{
+    margin: 10px 20px;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    background-color: rgb(40, 40, 40);
+}
+.menu .icons{
+    color: rgb(100, 100, 100);
+    font-size: x-large;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.menu .icons i:hover{
+    color: white;
+}
+
+#img{
+    background-size: cover;
+}
+.home-content{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.home-content .img-content{
+    height: 100%;
+    font-family: 'Crimson Pro', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:900px){
+    .img-content h1,h2{
+        transform: translateX(20px);
+    }
+    
+}
+.home-content .img-content h1{
+    font-size: 60px;
+}
+@media screen and (max-width:576px){
+    .home-content .img-content h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .home-content .img-content h1{
+        font-size: 34px;
+    }
+    .home-content .img-content h2{
+        font-size: 24px;
+    }
+}
+.home-content .img-content span{
+    color: rgb(0, 183, 255);
+    font-weight: bolder;
+}
+.home-content  i{
+    font-size: 40px;
+}
+
+.home-content #sidemenu{
+    float: right;
+}
+.home-content #sidemenu #bars{
+    position: relative;
+    right: 3%;
+    visibility: hidden;
+    cursor: pointer;
+    filter:contrast(200%)
+}
+@media screen and (max-width:1300px){
+    #bars{
+        visibility: visible !important;
+    }
+    
+}
+.home-content #sidemenu #cancel{
+    display: none;
+    cursor: pointer;
+}

@@ -1,0 +1,141 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: .4rem !important;
+    background-color: black !important;
+}
+.menu{
+    position: fixed !important;
+    top: 0px !important;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+@media screen and (max-width:1300px){
+    .menu{
+        position: absolute;
+        top: 0%;
+        left: -50%;
+        bottom: 0%;
+        z-index: 1000;
+    }
+    .menucard{
+        width: 240px;
+    }
+
+    
+}
+.menu .img-container{
+    height: 250px;
+    position: relative;
+}
+.menu img{
+    object-fit:cover;
+    filter: brightness(95%);
+}
+.menu .img-content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 76, 121, 0.4);
+    font-family: 'Noto Serif', serif;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+}
+.menu a:hover{
+    color: white;
+}
+.menu .menu-items{
+    background-color: rgb(20, 24, 24);
+}
+
+.menu .active{
+    color: white;
+}
+.menu h5{
+    margin: 10px 20px;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    background-color: rgb(40, 40, 40);
+}
+.menu .icons{
+    color: rgb(100, 100, 100);
+    font-size: x-large;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.menu .icons i:hover{
+    color: white;
+}
+
+.home-content{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.home-content .heading{
+    color: rgb(2, 156, 218);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    
+}
+
+.home-content .heading i{
+    font-size: 40px;
+}
+
+.home-content #sidemenu{
+    position: relative;
+}
+
+.home-content #sidemenu #bars{
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#user{
+    position: absolute;
+}
+
+@media screen and (max-width:1300px){
+    #bars{
+        visibility: visible !important;
+    }
+    #user{
+        display: none;
+    }
+}
+
+.home-content #sidemenu #cancel{
+    display: none;
+    cursor: pointer;
+}
+
+.home-content .contents,p{
+    color: white;  
+}
+
+.home-content h2{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.home-content .contents h5{
+    margin-bottom: 18px;
+}
