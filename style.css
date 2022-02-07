@@ -91,6 +91,8 @@ hr{
 #img{
     background-size: cover;
 }
+
+
 .home-content{
     position: absolute;
     right: 0px;
@@ -125,7 +127,7 @@ hr{
         font-size: 34px;
     }
     .home-content .img-content h2{
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 .home-content .img-content span{

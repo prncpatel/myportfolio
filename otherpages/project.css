@@ -80,7 +80,12 @@ hr{
 .menu .icons i:hover{
     color: white;
 }
-
+@media screen and (max-width:400px) {
+    .project-content{
+        padding: 3% !important;
+    }
+    
+}
 .home-content{
     position: absolute;
     right: 0px;
