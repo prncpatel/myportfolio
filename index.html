@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="loader">
+    <div id="loader">
         <h4>PRINCE KHANT</h4>
         <div class="spinner-border text-primary" id="spin"></div>
     </div>
@@ -68,6 +68,9 @@
     </div>
    
     <script>
+        setTimeout(function(){
+           $('#loader').fadeOut('slow');
+        },1800);
         var typed = new Typed("#autoinput", {
             strings : ["Full Stack developer"],
             typeSpeed:100,
@@ -85,9 +88,7 @@
             }
         })
        
-        setTimeout(function(){
-            $('.loader').fadeToggle('slow');
-        },1800);
+        
     </script>
 </body>
 

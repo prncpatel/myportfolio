@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     window.onload = function(){
         $("#bars").click(function(){

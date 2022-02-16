@@ -5,7 +5,7 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.loader{
+#loader{
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -14,6 +14,11 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100000;
 }
 .menu{
     position: fixed !important;
